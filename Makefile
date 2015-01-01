@@ -86,16 +86,16 @@ pre-commit: check test tests
 
 # Development Installation ###################################################
 
-.PHONY: env
-env: .virtualenv $(EGG_INFO)
-$(EGG_INFO): Makefile setup.py requirements.txt
-	VIRTUAL_ENV=$(ENV) $(PYTHON) setup.py develop
-	touch $(EGG_INFO)  # flag to indicate package is installed
+#.PHONY: env
+#env: .virtualenv $(EGG_INFO)
+#$(EGG_INFO): Makefile setup.py requirements.txt
+#	VIRTUAL_ENV=$(ENV) $(PYTHON) setup.py develop
+#	touch $(EGG_INFO)  # flag to indicate package is installed
 
-.PHONY: .virtualenv
-.virtualenv: $(PIP)
-$(PIP):
-	$(SYS_VIRTUALENV) --python $(SYS_PYTHON) $(ENV)
+#.PHONY: .virtualenv
+#.virtualenv: $(PIP)
+#$(PIP):
+#	$(SYS_VIRTUALENV) --python $(SYS_PYTHON) $(ENV)
 
 .PHONY: depends
 depends: depends-ci depends-dev
