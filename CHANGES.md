@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.0.0 (2013/10/09)
+0.0.1 (2015/01/01)
 ------------------
 
- - <Change the version, date, and this text.>
+ - Initial Release!

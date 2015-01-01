@@ -57,6 +57,8 @@ This will allow you to specify defaults for the command, but any arguments passe
 For Contributors
 ================
 
+Please make check and make test before submitting any pull requests.
+
 Requirements
 ------------
 
