@@ -1,12 +1,11 @@
-PingMe-cli
+pingme-cli
 ======
 Command line client for PingMe android app.
 
-[![Build Status](http://img.shields.io/travis/teddy-schmitz/pingme-cli/master.svg)](https://travis-ci.org/teddy-schmitz/pingme-cli)
-[![Coverage Status](http://img.shields.io/coveralls/teddy-schmitz/pingme-cli/master.svg)](https://coveralls.io/r/teddy-schmitz/pingme-cli)
-[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/teddy-schmitz/pingme-cli.svg)](https://scrutinizer-ci.com/g/teddy-schmitz/pingme-cli/?branch=master)
-[![PyPI Version](http://img.shields.io/pypi/v/PingMeCli.svg)](https://pypi.python.org/pypi/PingMeCli)
-[![PyPI Downloads](http://img.shields.io/pypi/dm/PingMeCli.svg)](https://pypi.python.org/pypi/PingMeCli)
+[![Build Status](http://img.shields.io/travis/Teddy-Schmitz/pingme-cli/master.svg)](https://travis-ci.org/Teddy-Schmitz/pingme-cli)
+[![Coverage Status](http://img.shields.io/coveralls/Teddy-Schmitz/pingme-cli/master.svg)](https://coveralls.io/r/Teddy-Schmitz/pingme-cli)
+[![PyPI Version](http://img.shields.io/pypi/v/pingme.svg)](https://pypi.python.org/pypi/pingme)
+[![PyPI Downloads](http://img.shields.io/pypi/dm/pingme.svg)](https://pypi.python.org/pypi/pingme)
 
 
 Getting Started
