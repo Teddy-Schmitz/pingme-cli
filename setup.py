@@ -18,14 +18,14 @@ else:
 CHANGES = open('CHANGES.md').read()
 
 setup(
-    name='Pingme',
+    name='pingme',
     version='0.0.1',
     packages=['pingme'],
     url='https://github.com/teddy-schmitz/pingme-cli',
     license='',
     author='Teddy Schmitz',
     author_email='lted.schmitz@gmail.com',
-    description='Cli client for PingMe! Android application.',
+    description='Cli for Pingme Android application.',
     entry_points={
         'console_scripts': ['pingme = pingme.pingme:main']
     },

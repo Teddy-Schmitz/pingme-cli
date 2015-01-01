@@ -1,4 +1,5 @@
 """
+pingme - command line client for pingme application.
 
 usage: pingme [-h] [--devices DEVICES] [message]
 
@@ -41,7 +42,12 @@ def send_ping(devices, message):
 
 
 def show_version():
+    """ Show version number.
+
+    :return: version string
+    """
     return "pingme v{0}".format(__VERSION__)
+
 
 def parse_args():
     """ Parse the passed in arguments and returns them.
@@ -49,7 +55,8 @@ def parse_args():
     :return: arguments
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('--version', action='version', help='Show version number', version=show_version())
+    parser.add_argument('--version', action='version',
+                        help='Show version number', version=show_version())
     parser.add_argument('--devices', '-d',
                         required=False,
                         help='Comma delimited list of device ids.')

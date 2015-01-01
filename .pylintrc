@@ -4,7 +4,8 @@
 # W0142: Used * or ** magic
 # W0511: TODO in comments
 # R0904: Too many public methods
-disable=I0011,W0142,W0511,R0904
+# D400:  First line should end with '.', not ']'
+disable=I0011,W0142,W0511,R0904,D400
 
 [REPORTS]
 
