@@ -33,7 +33,11 @@ else
 endif
 
 # virtualenv paths
-ENV := env
+ENV := $(VIRTUAL_ENV)
+ifndef ENV
+$(error No virtualenv active)
+endif
+
 ifneq ($(findstring win32, $(PLATFORM)), )
 	BIN := $(ENV)/Scripts
 	OPEN := cmd /c start
