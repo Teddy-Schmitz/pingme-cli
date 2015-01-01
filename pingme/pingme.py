@@ -17,8 +17,12 @@ from __future__ import print_function
 import requests
 import argparse
 import os
-import ConfigParser
-from ConfigParser import NoSectionError, MissingSectionHeaderError
+try:
+    import configparser
+    from configparser import NoSectionError, MissingSectionHeaderError
+except ImportError:
+    import ConfigParser
+    from ConfigParser import NoSectionError, MissingSectionHeaderError
 import json
 
 __VERSION__ = "0.1.0"
