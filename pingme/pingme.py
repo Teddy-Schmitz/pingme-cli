@@ -18,11 +18,11 @@ import requests
 import argparse
 import os
 try:
-    import configparser
-    from configparser import NoSectionError, MissingSectionHeaderError
+    import configparser  # pylint: disable=W0611
+    from configparser import NoSectionError, MissingSectionHeaderError  # pylint: disable=W0611
 except ImportError:
-    import ConfigParser
-    from ConfigParser import NoSectionError, MissingSectionHeaderError
+    import ConfigParser  # pylint: disable=W0611
+    from ConfigParser import NoSectionError, MissingSectionHeaderError  # pylint: disable=W0611
 import json
 
 __VERSION__ = "0.1.0"
