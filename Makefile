@@ -101,13 +101,13 @@ pre-commit: check test tests
 depends: depends-ci depends-dev
 
 .PHONY: depends-ci
-depends-ci: env Makefile $(DEPENDS_CI)
+depends-ci: Makefile $(DEPENDS_CI)
 $(DEPENDS_CI): Makefile
 	$(PIP) install $(PIP_CACHE) --upgrade pep8 pep257 pylint $(TEST_RUNNER) coverage
 	touch $(DEPENDS_CI)  # flag to indicate dependencies are installed
 
 .PHONY: depends-dev
-depends-dev: env Makefile $(DEPENDS_DEV)
+depends-dev: Makefile $(DEPENDS_DEV)
 $(DEPENDS_DEV): Makefile
 	$(PIP) install $(PIP_CACHE) --upgrade pep8radius pygments docutils pdoc wheel
 	touch $(DEPENDS_DEV)  # flag to indicate dependencies are installed
