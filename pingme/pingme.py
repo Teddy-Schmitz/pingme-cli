@@ -14,15 +14,12 @@ optional arguments:
 """
 from __future__ import print_function
 
+from six.moves import configparser  # pylint: disable=F0401,E0611
+from six.moves.configparser import NoSectionError, MissingSectionHeaderError  # pylint: disable=F0401,E0611
 import requests
 import argparse
 import os
-try:
-    import configparser  # pylint: disable=W0611
-    from configparser import NoSectionError, MissingSectionHeaderError  # pylint: disable=W0611
-except ImportError:
-    import ConfigParser  # pylint: disable=W0611
-    from ConfigParser import NoSectionError, MissingSectionHeaderError  # pylint: disable=W0611
+
 import json
 
 __VERSION__ = "0.1.0"
@@ -91,7 +88,7 @@ def read_config_file(fpath):
     :param fpath: File to read
     :return: dictionary of config items
     """
-    config = ConfigParser.SafeConfigParser()
+    config = configparser.SafeConfigParser()
     config.read(fpath)
 
     try:
