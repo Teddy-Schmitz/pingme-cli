@@ -34,7 +34,7 @@ def send_ping(devices, message):
     """
     data = {'device_id': devices, 'message': message}
     headers = {'content-type': 'application/json'}
-    response = requests.post('http://ping.blu3f1re.com:8080/ping/', data=json.dumps(data), headers=headers)
+    response = requests.post('https://ping.blu3f1re.com/ping/', data=json.dumps(data), headers=headers)
     if response.status_code == requests.codes.ok:  # pylint: disable=E1101
         exit(0)
     else:

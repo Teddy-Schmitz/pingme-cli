@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>FAQ &mdash; pingme-cli 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pingme-cli 0.0.1 documentation" href="index.html" />
+    <link rel="prev" title="Quick Start" href="QuickStart.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="QuickStart.html" title="Quick Start"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pingme-cli 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="faq">
+<h1>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-this">
+<h2>What is this?<a class="headerlink" href="#what-is-this" title="Permalink to this headline">¶</a></h2>
+<p>An interface to make calls to the pingme server.  This allows you to send arbitrary notifications to your android phone, provided you have the android application installed.</p>
+</div>
+<div class="section" id="how-does-this-work">
+<h2>How does this work?<a class="headerlink" href="#how-does-this-work" title="Permalink to this headline">¶</a></h2>
+<p>It is just sending post calls to the server with the correct arguments.  If you want to make your own calls to the server you can do so with this structure.</p>
+<div class="highlight-python"><div class="highlight"><pre>POST
+Header
+Content-Type: application/json
+Body
+{
+&quot;device_id&quot;:[&quot;device_ids&quot;],
+&quot;message&quot;:&quot;message&quot;
+}
+</pre></div>
+</div>
+<p>An example curl request would look like this</p>
+<div class="highlight-python"><div class="highlight"><pre>curl -X POST -H &quot;Content-Type: application/json&quot; -d &#39;{&quot;device_id&quot;:[&quot;PUTIDHERE&quot;],&quot;message&quot;:&quot;TEST MESSAGE&quot;}&#39; https://ping.blu3f1re.com/ping/
+</pre></div>
+</div>
+<p>To get a device id you must download the Android app from the app store.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">FAQ</a><ul>
+<li><a class="reference internal" href="#what-is-this">What is this?</a></li>
+<li><a class="reference internal" href="#how-does-this-work">How does this work?</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="QuickStart.html"
+                        title="previous chapter">Quick Start</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/FAQ.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="QuickStart.html" title="Quick Start"
+             >previous</a> |</li>
+        <li><a href="index.html">pingme-cli 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Teddy Schmitz.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>
