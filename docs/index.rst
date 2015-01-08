@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
    QuickStart
+   HowTo
    FAQ
 
 
