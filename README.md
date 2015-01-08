@@ -6,6 +6,7 @@ Command line client for PingMe android app.
 [![Coverage Status](http://img.shields.io/coveralls/Teddy-Schmitz/pingme-cli/master.svg)](https://coveralls.io/r/Teddy-Schmitz/pingme-cli)
 [![PyPI Version](http://img.shields.io/pypi/v/pingme.svg)](https://pypi.python.org/pypi/pingme)
 [![PyPI Downloads](http://img.shields.io/pypi/dm/pingme.svg)](https://pypi.python.org/pypi/pingme)
+[![Documentation Status](https://readthedocs.org/projects/pingme-cli/badge/?version=latest)](http://pingme-cli.readthedocs.org/en/latest/)
 
 
 Getting Started
@@ -52,6 +53,8 @@ devices=deviceid1,deviceid2
 message=Example
 ```
 This will allow you to specify defaults for the command, but any arguments passed in will override these values.
+
+More information at [ReadtheDocs](http://pingme-cli.readthedocs.org/en/latest/)
 
 
 For Contributors
