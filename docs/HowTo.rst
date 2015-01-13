@@ -1,7 +1,9 @@
 How to use
 **********
 
-First you must download the Android application at
+First you must download the Android application from the `Android Market <https://play.google.com/store/apps/details?id=com.blu3f1re.pingme>`_
+
+
 
 
 The app will guide you through registering your device against the pingme server.  Once you have your device id, you can email it to yourself for easy portability.  If you want to ping your phone from a server then as long as you can run python all you need to do is::
